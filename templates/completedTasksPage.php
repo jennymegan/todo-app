@@ -5,17 +5,15 @@
     <title>TO-DO</title>
 </head>
 <body>
+<h1>DONESIES</h1>
 
 <?php
-
-foreach ($tasks as $task) {
-    echo '<li>' . $task['name'] . ' 
-<form method="post" action="/deleteTask/' . $task['id'] . '">
-<input type="submit" value ="Delete"></li>
-</form>';
-}
-
+echo \App\Viewhelpers\CompletedTasksPageViewhelper::displayCompletedTasks($tasks);
 ?>
+
+<form method="get" action="/">
+    <input type="submit" value="View ToDo">
+</form>
 
 </body>
 </html>

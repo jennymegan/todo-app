@@ -5,6 +5,7 @@
     <title>TO-DO</title>
 </head>
 <body>
+<h1>TO DO</h1>
 
 <form method="post" action="/storeTask">
 <label for="task">Add New Task:</label><br>
@@ -13,15 +14,7 @@
 </form>
 <ul>
 <?php
-
-foreach ($tasks as $task) {
-echo '<li>' . $task['name'] . ' 
-<form method="post" action="/markComplete/' . $task['id'] . '">
-<input type="submit" value ="Mark as Complete"></li>
-</form>';
-}
-
-
+echo \App\Viewhelpers\HomepageViewhelper::displayTaskList($tasks);
 ?>
 </ul>
 
