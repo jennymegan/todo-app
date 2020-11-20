@@ -24,12 +24,3 @@ echo \App\Viewhelpers\HomepageViewhelper::displayTaskList($tasks);
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-

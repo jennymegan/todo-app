@@ -11,8 +11,12 @@ class HomepageViewhelper
         foreach ($tasks as $task) {
             echo '<li>' . $task['name'] . ' 
             <form method="post" action="/markComplete/' . $task['id'] . '">
-            <input type="submit" value ="Mark as Complete"></li>
-            </form>';
+                <input type="submit" value ="Mark as Complete">
+            </form>
+            <form method="post" action="">
+             <input type="submit" value ="Edit">
+            </form>
+            </li>';
         }
     }
 
