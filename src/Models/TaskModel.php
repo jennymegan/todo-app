@@ -6,7 +6,6 @@ namespace App\Models;
 
 class TaskModel
 {
-
     private $db;
 
     public function getUncompletedTasks(): array
@@ -39,6 +38,12 @@ class TaskModel
     {
         $query = $this->db->prepare('UPDATE `tasks` SET `deleted` = 1 WHERE `id` = ?');
         $query->execute([$id]);
+    }
+
+    public function updateTask($task,$id): void
+    {
+        $query = $this->db->prepare('UPDATE `tasks` SET `name` = ? WHERE `id` = ?');
+        $query->execute([$task,$id]);
     }
 
     public function __construct($db)

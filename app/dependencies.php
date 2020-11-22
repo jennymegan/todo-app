@@ -40,12 +40,7 @@ return function (ContainerBuilder $containerBuilder) {
     $container['CompletedTaskPageController'] = DI\Factory('\App\Factories\CompletedTaskPageControllerFactory');
     $container['MarkCompleteController'] = DI\Factory('\App\Factories\MarkCompleteControllerFactory');
     $container['StoreTaskController'] = DI\Factory('\App\Factories\StoreTaskControllerFactory');
-
-
-
-
-
-
+    $container['UpdateTaskController'] = DI\Factory('\App\Factories\UpdateTaskControllerFactory');
 
 
     $containerBuilder->addDefinitions($container);

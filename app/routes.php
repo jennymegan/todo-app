@@ -11,5 +11,5 @@ return function (App $app) {
     $app->post('/markComplete/{id}', 'MarkCompleteController');
     $app->post('/deleteTask/{id}', 'DeleteTaskController');
     $app->get('/completedTasks', 'CompletedTaskPageController');
-
+    $app->post('/updateTask', 'UpdateTaskController');
 };

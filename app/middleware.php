@@ -5,4 +5,6 @@ use Slim\App;
 
 return function (App $app) {
 //    $app->add(); // example of how to add Middleware
+
+$app->addBodyParsingMiddleware();
 };
