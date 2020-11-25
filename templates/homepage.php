@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>TO-DO</title>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <h1>TO DO</h1>
@@ -12,11 +13,11 @@
 <input type="text" id="task" name="task" value="To-Do Task">
 <input type="submit" value="Submit">
 </form>
-<ul>
+
 <?php
 echo \App\Viewhelpers\HomepageViewhelper::displayTaskList($tasks);
 ?>
-</ul>
+
 
 <form method="get" action="/completedTasks">
     <input type="submit" value="View Completed">

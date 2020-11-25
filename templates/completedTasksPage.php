@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TO-DO</title>
+    <title>TO-DONE</title>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<h1>DONESIES</h1>
-<ul>
+<h1>DONE</h1>
+
 <?php
 echo \App\Viewhelpers\CompletedTasksPageViewhelper::displayCompletedTasks($tasks);
 ?>
-</ul>
+
 <form method="get" action="/">
     <input type="submit" value="View ToDo">
 </form>
