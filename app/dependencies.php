@@ -33,5 +33,20 @@ return function (ContainerBuilder $containerBuilder) {
         return $renderer;
     };
 
+    $container['DbConnector'] = DI\Factory('\App\DbConnector');
+    $container['TaskModel'] = DI\Factory('\App\Factories\TaskModelFactory');
+    $container['HomepageController'] = DI\Factory('\App\Factories\HomepageControllerFactory');
+    $container['DeleteTaskController'] = DI\Factory('\App\Factories\DeleteTaskControllerFactory');
+    $container['CompletedTaskPageController'] = DI\Factory('\App\Factories\CompletedTaskPageControllerFactory');
+    $container['MarkCompleteController'] = DI\Factory('\App\Factories\MarkCompleteControllerFactory');
+    $container['StoreTaskController'] = DI\Factory('\App\Factories\StoreTaskControllerFactory');
+
+
+
+
+
+
+
+
     $containerBuilder->addDefinitions($container);
 };
