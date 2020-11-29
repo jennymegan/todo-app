@@ -1,8 +1,13 @@
-# Slim Framework 4 Skeleton Application
+# Slim Framework Based To Do App 
 
-Use this skeleton application to quickly setup and start working on a new Slim Framework 4 application. This application uses the latest Slim 4 with Slim PSR-7 implementation and PHP-DI container implementation along with the PHP-View template renderer. It also uses the Monolog logger.
+Working with the MVC Framework Slim. 
+Back end in PHP, light front end using HTML/CSS only.
 
-This skeleton application was built for Composer. This makes setting up a new Slim Framework application quick and easy.
+
+
+
+
+This skeleton application was built for Composer. 
 
 ## Install the Application
 
@@ -10,14 +15,10 @@ Create a new directory with your project name, e.g:
 
 
 ```bash
-mkdir academyProject
+mkdir Project
 ```
 
-Once inside the new directory, clone this repo:
-
-```bash
-git clone git@github.com:Mayden-Academy/slim4-skeleton.git .
-```
+Once inside the new directory, clone this repo.
 
 One cloned, you must install the slim components by running:
 
